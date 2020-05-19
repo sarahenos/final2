@@ -1,0 +1,688 @@
+@font-face{
+    font-family: bannerfont;
+ src:url(invasion2000/INVASION2000.TTF);
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0px;
+    background-color: #dcdcdc;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #ffff;
+}
+
+div {
+    letter-spacing:3px;
+}
+
+/* BANNER STARTS HERE */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url("images/partybanner.jpg");
+    height: 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*position: relative;*/
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    /*    border: 10px dotted #000000;*/
+
+
+}
+
+.hero-text {
+    font-family: bannerfont;
+    text-align: center;
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    color: #ffff; 
+}
+
+
+
+/* HEADER STARTS HERE */
+
+.header {
+   /* overflow: hidden;*/
+    background-color: #f1f1f1;
+    width:100%;
+}
+
+.headerwrap {
+    max-width:1100px;
+    margin:0 auto;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: bannerfont;
+}
+.header a {
+    color: #000000;
+    width:20%;
+    box-sizing: border-box;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 105%;
+    line-height: 20px;
+    border-radius: 4px;
+    text-align:center;
+    
+}
+
+
+/* mouse-over effects */
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* active/current link*/
+.header a.active {
+    background-color: #FF69B4;
+    ;
+    color: white;
+}
+
+.header a.active2 {
+    background-color: #1E90FF;
+    ;
+    color: white;
+}
+
+.header a.active3 {
+    background-color: #51CF5F;
+    ;
+    color: white;
+}
+
+.header a.active4 {
+    background-color: #FFA500;
+    ;
+    color: white;
+}
+
+/* BUTTONS START HERE FOR HOMEPAGE */
+
+.wrapper {
+    width: 60%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: 120px;
+    grid-template-areas:
+        "a a a a b b b b"
+        "a a a a b b b b"
+        "c c c c d d d d"
+        "c c c c d d d d";
+
+
+}
+
+.item1 {
+    grid-area: a;
+    background: #FF69B4;
+    color: white;
+    padding: 10px;
+    width: 10px
+    font-family:'Staatliches', cursive;
+}
+
+.item2 {
+    grid-area: b;
+    background: #1E90FF;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+}
+
+.item3 {
+    grid-area: c;
+    background: #51CF5F;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+
+}
+
+.item4 {
+    grid-area: d;
+    background: #FFA500;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+}
+
+.item1,
+.item2,
+.item3,
+.item4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 175%;
+    border-radius: 6px;
+    font-family:'Staatliches', cursive;
+    
+   
+}
+
+.item1:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/Favorites.jpg);
+    background-size: cover;
+}
+
+.item2:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/Family.jpg);
+    background-size: cover;
+}
+
+.item3:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/single.jpg);
+    background-size: cover;
+}
+
+.item4:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/multiplayer.jpg);
+    background-size: cover;
+
+}
+
+/* BUTTONS START HERE FOR OUR CATEGORY PAGES */
+
+.wrapper2 {
+    width: 60%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-gap: 30px;
+    grid-auto-rows: 100px;
+    grid-template-areas:
+        "e e e e f f f f"
+        "e e e e f f f f"
+        "g g g g h h h h"
+        "g g g g h h h h"
+        "i i i i j j j j"
+        "i i i i j j j j";
+    padding: 0 0 15px 0;
+}
+
+.item5 {
+    grid-area: e;
+    background: #FF69B4;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+   
+}
+
+.item6 {
+    grid-area: f;
+    background: #1E90FF;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+
+.item7 {
+    grid-area: g;
+    background: #51CF5F;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+
+.item8 {
+    grid-area: h;
+    background: #FFA500;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+
+.item9 {
+    grid-area: i;
+    background: #BA55D3;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+
+.item10 {
+    grid-area: j;
+    background: #DC143C;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+
+.item11 {
+    grid-area: e;
+    background: #FF69B4;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+   
+}
+
+.item12 {
+    grid-area: f;
+    background: #1E90FF;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+
+.item13 {
+    grid-area: g;
+    background: #51CF5F;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+
+.item14 {
+    grid-area: h;
+    background: #FFA500;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+
+.item15 {
+    grid-area: i;
+    background: #BA55D3;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+
+.item16 {
+    grid-area: j;
+    background: #DC143C;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+.item17 {
+   grid-area: e;
+    background: #FF69B4;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+.item18 {
+    grid-area: f;
+    background: #1E90FF;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+.item19 {
+    grid-area: g;
+    background: #51CF5F;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+.item20 {
+    grid-area: h;
+    background: #FFA500;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+.item21 {
+    grid-area: i;
+    background: #BA55D3;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+.item22 {
+    grid-area: j;
+    background: #DC143C;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+
+.item23 {
+    grid-area: e;
+    background: #FF69B4;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+   
+}
+
+.item24 {
+    grid-area: f;
+    background: #1E90FF;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+
+.item25 {
+    grid-area: g;
+    background: #51CF5F;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+
+.item26 {
+    grid-area: h;
+    background: #FFA500;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+
+.item27 {
+    grid-area: i;
+    background: #BA55D3;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+
+.item28 {
+    grid-area: j;
+    background: #DC143C;
+    color: white;
+    padding: 10px;
+    font-family:'Staatliches', cursive;
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+/*
+.item5,
+.item6,
+.item7,
+.item8,
+.item9,
+.item10,
+.item11,
+.item12,
+.item13,
+.item14,
+.item15,
+.item16,
+.item17,
+.item18,
+.item19,
+.item20,
+.item21,
+.item22,
+{
+    display: flex;
+    font-size: 140%;
+    border-radius: 6px;
+}
+*/
+
+.item5:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/cards.jpg);
+    background-size: cover;
+}
+.item6:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/codenames.jpg);
+    background-size: cover;
+}
+.item7:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/battleship.jpg);
+    background-size: cover;
+}
+
+.item8:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/uno.jpg);
+    background-size: cover;
+}
+
+.item9:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/slither.jpg);
+    background-size: cover;
+}
+.item10:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/kahoot.jpg);
+    background-size: cover;
+}
+.item11:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/monopoly.jpg);
+    background-size: cover;
+}
+
+.item12:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/yahtzee.jpg);
+    background-size: cover;
+}
+.item13:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/gofish.jpg);
+    background-size: cover;
+}
+.item14:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/crazy.jpg);
+    background-size: cover;
+}
+.item15:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/fakeartist.jpg);
+    background-size: cover;
+}
+.item16:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/fishbowl.jpg);
+    background-size: cover;
+}
+.item17:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/tetris.jpg);
+    background-size: cover;
+}
+.item18:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/minesweeper.jpg);
+    background-size: cover;
+}
+.item19:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/solitaire.jpg);
+    background-size: cover;
+}
+.item20:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/piano.jpg);
+    background-size: cover;
+}
+.item21:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/boggle.jpg);
+    background-size: cover;
+}
+.item22:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/sudoku.jpg);
+    background-size: cover;
+}
+
+.item23:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/pictionary.jpg);
+    background-size: cover;
+}
+.item24:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/taboo.jpg);
+    background-size: cover;
+}
+.item25:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/scattergories.jpg);
+    background-size: cover;
+}
+.item26:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/banana.jpg);
+    background-size: cover;
+}
+.item27:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/quiz.jpg);
+    background-size: cover;
+}
+.item28:hover {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(images/scrabble.jpg);
+    background-size: cover;
+}
+/* MEDIA QUERY */
+
+@media screen and (max-width: 700px) {
+   
+    .headerwrap {
+        flex-direction:column;
+        padding: 0;
+    }
+    .header a {
+        width:100%;
+        display: block;
+        text-align: center;
+        margin:0;
+        
+        
+        
+    }
+
+   /* .header-right {
+        float: none;
+
+    }*/
+    
+    .wrapper {
+    display: block;
+    width:auto;
+    margin: 0px;
+   
+  }
+
+
+    
+    .wrapper2 {
+    display: block;
+    width:auto;
+    margin: 0px;
+    grid-row-gap: 100px;
+  margin: 0px;
+  }
+    
+    .item1,
+.item2,
+.item3,
+.item4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 175%;
+    border-radius: 0px;
+    font-family:'Staatliches', cursive;
+    padding: 60px;
+}
+    
+.item5,
+.item6,
+.item7,
+.item8,
+.item9,
+.item10,
+.item11,
+.item12,
+.item13,
+.item14,
+.item15,
+.item16,
+.item17,
+.item18,
+.item19,
+.item20,
+.item21,
+.item22,
+.item23,
+.item24,
+.item25,
+.item26,
+.item27,
+.item28
+{
+    display: flex;
+    font-size: 140%;
+    border-radius: 0px;
+    padding: 60px;
+      margin: 0px;
+
+}
